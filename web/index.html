@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter application.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="config_firebase">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>config_firebase</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+
+<script>
+    // TODO: Replace the following with your app's Firebase project configuration.
+    // See: https://support.google.com/firebase/answer/7015592
+    var firebaseConfig = {
+      apiKey: "AIzaSyAk1CWCZg4W4895s3ponaJJoytAwu6w-C8",
+      authDomain: "prueba-firebase-d2187.firebaseapp.com",
+      databaseURL: "https://prueba-firebase-d2187-default-rtdb.firebaseio.com",
+      projectId: "prueba-firebase-d2187",
+      storageBucket: "prueba-firebase-d2187.appspot.com",
+      messagingSenderId: "366585114787",
+      appId: "1:366585114787:web:4a13f54d2ece3acdef0f16"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+<script src="main.dart.js" type="application/javascript"></script>
+
+</body>
+</html>

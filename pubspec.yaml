@@ -1,0 +1,27 @@
+name: config_firebase
+description: A new Flutter application.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.1
+  firebase_auth: ^0.16.1
+  cloud_firestore: ^0.13.6
+  firebase_core: ^0.4.5
+  rflutter_alert: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+
