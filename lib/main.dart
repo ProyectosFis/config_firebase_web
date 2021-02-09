@@ -86,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     padding: const EdgeInsets.symmetric(vertical: 20),
                     child: PruebaButton(
                         onPressed: () {
-                          _addProduct();
+                          _addPrueba();
                         },
                         title: "subir"),
                   ),
@@ -164,14 +164,19 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  void _addProduct() {
-    Map<String, dynamic> liveDoc = {
+  void _addPrueba() {
+
+    Map<String, dynamic> pruebaDoc = {
       "id": idSubir,
       "Dato de prueba": datoSubir,
     };
+
     LogMessage.post("PRUEBA");
-    References.prueba.add(liveDoc).then((r) {
+
+    References.prueba.add(pruebaDoc).then((r) {
+
       LogMessage.postSuccess("PRUEBA");
+
       Alert(
           context: context,
           title: "Add",
@@ -237,10 +242,12 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _updatePrueba() {
+
     Map<String, dynamic> liveMap = {
       "id": idActualizar,
       "Dato de prueba": datoActualizar,
     };
+
     print("⏳ ACTUALIZARÉ PRUEBA");
     References.prueba
         .document(listaPrueba[0].id)
